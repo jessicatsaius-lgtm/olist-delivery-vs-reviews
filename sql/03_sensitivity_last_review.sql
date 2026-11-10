@@ -1,8 +1,7 @@
 -- Olist: sensitivity test, keep the LAST review per order instead of the lowest (2026-10-29)
 -- Question: does the main result change if an order with several reviews uses its latest review score?
 -- Only the review step differs from 02_main_analysis.sql Query 1; filtered_orders, grouping and the low-score rule are unchanged.
--- Written by Jessica: ranked_reviews (row_number over review_answer_timestamp desc, checked: 98,673 orders, no ties on the latest time).
--- Written by Claude at Jessica's request: wiring it into the full query.
+-- ranked_reviews: row_number over review_answer_timestamp desc (checked: 98,673 orders, no ties on the latest time).
 -- Main result to compare with: late 6,378 / 4,676 low / 73.31%; on_time 89,258 / 15,518 / 17.39%.
 
 with ranked_reviews as(

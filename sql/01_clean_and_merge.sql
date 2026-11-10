@@ -1,5 +1,5 @@
--- Olist: clean and merge orders + reviews (Jessica, 2026-10-26)
--- Two queries below. Both were written by Jessica and checked against an independent recount.
+-- Olist: clean and merge orders + reviews (2026-10-26)
+-- Two queries below, checked against an independent recount.
 --
 -- Rules (see data-notes.md section 7):
 --   1. keep only delivered orders that have a delivered-to-customer date and a handed-to-carrier date

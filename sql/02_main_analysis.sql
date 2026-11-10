@@ -1,7 +1,7 @@
--- Olist: main analysis (Jessica, 2026-10-26)
+-- Olist: main analysis (2026-10-26)
 -- Question: are late deliveries linked to more low review scores, and is the delay in the prep stage or the transit stage?
 -- Built on the clean merged data (01_clean_and_merge.sql, 95,636 orders, one row per order).
--- Both queries were written by Jessica and checked against an independent recount from the raw CSVs.
+-- Both queries were checked against an independent recount from the raw CSVs.
 --
 -- Definitions (fixed before looking at results, see analysis-log.md):
 --   late     = delivered DATE is later than estimated DATE (both cast with ::date); otherwise on_time
